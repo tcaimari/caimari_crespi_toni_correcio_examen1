@@ -51,4 +51,24 @@ article {
     padding: 20px;
     border: 1px solid black;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.nou {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.nou {
+    padding: 4px 10px;
+    background-color: #2e7d32;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+article img {
+    width: 100%;
+    /* tan ampla com el contingut de l'article */
 }
