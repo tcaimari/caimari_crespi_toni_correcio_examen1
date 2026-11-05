@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    /* 1rem = 10px */
 }
 
 *,
@@ -14,7 +13,6 @@ body {
     font-size: 1.6rem;
 }
 
-/* 16px */
 
 :root {
     --principal: #1750a1;
@@ -34,12 +32,10 @@ h1 {
     font-size: 3.2rem;
 }
 
-/* 32px */
 h2 {
     font-size: 2.4rem;
 }
 
-/* 24px */
 
 nav a {
     color: white;
@@ -70,5 +66,29 @@ article {
 
 article img {
     width: 100%;
-    /* tan ampla com el contingut de l'article */
+}
+
+main{
+    padding: 20px, 16px, 0;
+}
+
+.eslogan{
+    display: none;
+}
+
+@media (min-width: 76px) {
+    .eslogan{
+        display: block;
+    }
+    
+    nav li{
+        display: inline-block;
+    }
+
+    article{
+        display: inline-block;
+        width: 45%;
+        margin-top: 15%;
+        vertical-align: top;
+    }
 }
