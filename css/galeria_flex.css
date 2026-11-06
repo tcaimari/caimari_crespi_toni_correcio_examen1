@@ -1,0 +1,74 @@
+/* Els dos trucs */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Georgia, serif;
+    background-color: #f3f1ec;
+}
+
+header {
+    background-color: #1750a1;
+    color: white;
+    padding: 16px;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.banner {
+    display: none;
+    margin: 0;
+}
+
+main {
+    padding: 0 16px 16px;
+}
+
+
+
+.galeria {
+display: flex;
+}
+
+
+/*me he quedado en el paso 4 por hacer*/
+
+
+/* Mòbil: una foto per fila */
+figure {
+    margin: 0;
+    /* fora el marge de fàbrica
+*/
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d8d3c9;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    padding: 8px 10px;
+}
+
+.km {
+    display: none;
+    color: #6b6459;
+}
