@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+
+body {
+    font-size: 1.6rem;
+}
+
+
+:root {
+    --principal: #1750a1;
+    --fons: #f3f1ec;
+}
+
+body {
+    background-color: var(--fons);
+}
+
+header {
+    background-color: var(--principal);
+    color: white;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+figure {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 0 0 16px;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+.baner, .km {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    figure {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+}
+
+@media (min-width: 768px) {
+    .km {
+        display: inline;
+    }
+    .baner {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    figure {
+        width: 31.33%;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 76px) {
+    .eslogan{
+        display: block;
+    }
+    
+    nav li{
+        display: inline-block;
+    }
+
+    article{
+        display: inline-block;
+        width: 45%;
+        margin-top: 15%;
+        vertical-align: top;
+    }
+}
