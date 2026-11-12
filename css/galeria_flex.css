@@ -40,13 +40,13 @@ main {
 }
 
 
-
 .galeria {
-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    /* si no hi caben, a la fila següent */
+    gap: 16px;
+    /* l’espai entre fotos: fora marges */
 }
-
-
-/*me he quedado en el paso 4 por hacer*/
 
 
 /* Mòbil: una foto per fila */
@@ -71,4 +71,41 @@ figcaption {
 .km {
     display: none;
     color: #6b6459;
+}
+
+/* A partir de 576 px: dues fotos per fila */
+@media (min-width: 576px) {
+    figure {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+/* A partir de 768 px: els km i el bàner */
+@media (min-width: 768px) {
+    .km {
+        display: inline;
+    }
+
+    .banner {
+        display: block;
+    }
+}
+
+/* A partir de 992 px: tres fotos per fila */
+@media (min-width: 992px) {
+    figure {
+        width: calc((100% - 32px) / 3);
+    }
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
